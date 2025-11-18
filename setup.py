@@ -19,6 +19,6 @@ def get_version():
 setup(
     name="rrls",
     version=get_version(),
-    long_description=open("README.md").read(),
+    long_description=open("README.md", encoding="utf-8").read(),
     packages=["rrls"],
 )
