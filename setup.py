@@ -2,7 +2,8 @@ from __future__ import annotations
 
 import pathlib
 
-from setuptools import setup
+from setuptools import setup, find_packages
+
 
 CWD = pathlib.Path(__file__).absolute().parent
 
@@ -20,5 +21,5 @@ setup(
     name="rrls",
     version=get_version(),
     long_description=open("README.md", encoding="utf-8").read(),
-    packages=["rrls"],
+    packages=find_packages(),
 )
